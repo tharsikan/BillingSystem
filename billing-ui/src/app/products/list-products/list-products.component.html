@@ -1,0 +1,8 @@
+<mat-list role="list" *ngFor="let product of products">
+    <mat-list-item role="listitem" *ngIf="product">
+        {{product.name}} | <a [routerLink]="['/products/edit', product.productId]">Edit</a>  | <a [routerLink]="['/products/delete', product.productId]">Delete</a> | <a [routerLink]="['/products/view', product.productId]">View</a>
+    </mat-list-item>
+</mat-list>
+
+
+    
